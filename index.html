@@ -28,9 +28,9 @@
 <script type="text/javascript" src="./home.js"></script>
 <script>
     $('.content a').on('click', function(){
-        if(_gaq && _gaq.push) {
-            _gaq.push(['_trackEvent', 'register', 'click']);   
-        }
+        if(ga) {
+            ga('send', 'event', 'outbound', 'click', 'http://library.ant.design/');
+        }   
     });    
 </script>
 </body>
