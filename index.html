@@ -26,5 +26,12 @@
 <div id="ReactApp"></div>
 <script src="https://a.alipayobjects.com/??es5-shim/4.0.5/es5-shim.js,es5-shim/4.0.5/es5-sham.js,html5shiv/3.7.2/src/html5shiv.js"></script>
 <script type="text/javascript" src="./home.js"></script>
+<script>
+    $('.content a').on('click', function(){
+        if(_gaq && _gaq.push) {
+            _gaq.push(['_trackEvent', 'register', 'click']);   
+        }
+    });    
+</script>
 </body>
 </html>
