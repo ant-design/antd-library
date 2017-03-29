@@ -24,9 +24,15 @@ var _czc = _czc || [];
 //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
 _czc.push(["_setAccount", "1261608902"]);
     
-$('.content a').on('click', function(){
-    _czc.push(['_trackEvent', '统计', '下载', '','','']);
-});      
+$('.content3 a:nth(0)').on('click', function(){
+    _czc.push(['_trackEvent', '统计', '下载 web', '','','']);
+});    
+$('.content3 a:nth(1)').on('click', function(){
+    _czc.push(['_trackEvent', '统计', '下载 mobile', '','','']);
+});
+$('.content3 a:nth(2)').on('click', function(){
+    _czc.push(['_trackEvent', '统计', '下载 axture', '','','']);
+}); 
 </script>
 </body>
 </html>
